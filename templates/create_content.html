@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create page - Wiki</title>
+</head>
+<body>
+
+<style>
+    *{box-sizing:border-box; font-family: sans-serif;}
+    .container{padding:16px}
+    input[type=password],input[type=text]{width:100%;padding:15px;margin:5px 0 22px 0;display:inline-block;border:none;background:#f1f1f1}
+    input[type=password]:focus,input[type=text]:focus{background-color:#ddd;outline:0}
+    hr{border:1px solid #f1f1f1;margin-bottom:25px}
+    .registerbtn{background-color:#af4d4c;color:#fff;padding:16px 20px;margin:8px 0;border:none;cursor:pointer;width:100%;opacity:.9}
+    .registerbtn:hover{opacity:1}
+    a{color:#1e90ff}
+    .signin{background-color:#f1f1f1;text-align:center}
+</style>
+
+<div class="container">
+<h1>Create page</h1> <hr>
+<div id="content">
+</div>
+<div id="edit_content">
+<form action="/create_send/" id="update_form" method="post">
+<input type="text" id="page_name" name="page_name"><br>
+<textarea rows="30" cols="150" name="update_html_content">
+</textarea>
+<br><input type="submit" value="Update" class="update_button">
+</form>
+</div>
+<hr>
+</div>
+<div class="container signin">
+    <p><a href="/create/">[create]</a> | <a href="#" onclick="edit_page()">[edit]</a> | <a href="/pages/">[pages]</a> | <a href="/img/">[img]</a> | <a href="/">[home]</a></p>
+</div>
+
+
+</body>
+</html>
